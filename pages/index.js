@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { Button, Carousel, Layout, Typography } from "antd";
+import { Button, Layout, Typography } from "antd";
 
 import { AGENTS } from "../constants/agents";
 import styles from "../styles/Random.module.css";
@@ -22,14 +22,14 @@ const RandomPage = () => {
         <div style={{ color: "white" }}>VALORANT RANDOMIZER</div>
       </Header>
       <Content>
-        <Carousel autoplay>
+        {/* <Carousel autoplay>
           {AGENTS.map(({ id, name }) => (
             <div key={id}>
               <h3 className={styles.contentStyle}>{name}</h3>
             </div>
           ))}
-        </Carousel>
-        <div style={{ textAlign: "center" }}>
+        </Carousel> */}
+        <div style={{ textAlign: "center", marginTop: 30 }}>
           <Button onClick={handleRandom} type="primary">
             Random Agent
           </Button>
